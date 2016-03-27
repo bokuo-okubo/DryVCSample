@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="DryVCSample" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZO-Fn-z3S">
+                    <rect key="frame" x="505" y="530" width="55" height="30"/>
+                    <state key="normal" title="Button2"/>
+                    <connections>
+                        <action selector="button2Clicked:" destination="-1" eventType="touchUpInside" id="ZGU-vf-M90"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzr-GO-2iw">
+                    <rect key="frame" x="40" y="530" width="55" height="30"/>
+                    <state key="normal" title="Button1"/>
+                    <connections>
+                        <action selector="button1Clicked:" destination="-1" eventType="touchUpInside" id="7gu-Sw-Dl8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-Bp-Sxl">
+                    <rect key="frame" x="0.0" y="231" width="600" height="136.5"/>
+                    <color key="backgroundColor" red="0.82958370683867788" green="0.83914839659685869" blue="0.63552969832459028" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="136.5" id="Iee-54-Fu1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fZO-Fn-z3S" firstAttribute="bottom" secondItem="Pzr-GO-2iw" secondAttribute="bottom" id="IZD-5Z-be4"/>
+                <constraint firstItem="Pzr-GO-2iw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="IwW-Yl-TUu"/>
+                <constraint firstAttribute="trailing" secondItem="fZO-Fn-z3S" secondAttribute="trailing" constant="164" id="aWf-An-ceC"/>
+                <constraint firstItem="fZO-Fn-z3S" firstAttribute="height" secondItem="Pzr-GO-2iw" secondAttribute="height" id="fuG-q8-M6N"/>
+                <constraint firstAttribute="bottom" secondItem="Pzr-GO-2iw" secondAttribute="bottom" constant="40" id="iet-E2-Oo7"/>
+                <constraint firstItem="ozc-Bp-Sxl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oGr-ug-fRZ"/>
+                <constraint firstAttribute="trailing" secondItem="fZO-Fn-z3S" secondAttribute="trailing" constant="40" id="q0u-HQ-1F5"/>
+                <constraint firstItem="ozc-Bp-Sxl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ref-Ai-gID"/>
+                <constraint firstItem="fZO-Fn-z3S" firstAttribute="width" secondItem="Pzr-GO-2iw" secondAttribute="width" id="s7L-o2-CxV"/>
+                <constraint firstAttribute="trailing" secondItem="ozc-Bp-Sxl" secondAttribute="trailing" id="sGd-l8-qTK"/>
+            </constraints>
+            <point key="canvasLocation" x="300" y="378"/>
+        </view>
+    </objects>
+</document>
